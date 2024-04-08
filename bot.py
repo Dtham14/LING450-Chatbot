@@ -2,25 +2,27 @@ from chatterbot import ChatBot
 import time 
 from chatterbot.trainers import ListTrainer
 
+from chatterbot.trainers import ChatterBotCorpusTrainer
+
+
 time.clock = time.time
 
-chatbot = ChatBot("Chatpot")
+CORPUS_FILE = "./corpus.txt"
+
+chatbot = ChatBot(
+    "LING 450 ChatBot",
+)
 
 trainer = ListTrainer(chatbot)
-trainer.train([
-    "Hi",
-    "Welcome, friend 🤗",
-])
-trainer.train([
-    "Are you a plant?",
-    "No, I'm the pot below the plant!",
-])
 
+trainer.train(CORPUS_FILE)
 
-exit_conditions = (":q", "quit", "exit")
+exit_conditions = (":e", "quit", "exit")
 while True:
     query = input("> ")
     if query in exit_conditions:
         break
+    elif query.endswith("?"):
+        print(f" Of Course! {chatbot.get_response(query)}")
     else:
         print(f" {chatbot.get_response(query)}")
