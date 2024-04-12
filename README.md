@@ -10,6 +10,6 @@ The goal is to train a chatbot to hold conversations with a more human-like pers
 ChatterBot:
 python -m pip install chatterbot==1.0.4 pytz
 
-## run
+## Run Command
 
 python bot.py
