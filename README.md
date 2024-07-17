@@ -2,7 +2,7 @@
  
 ## Description
 
-This project will focus on an implementation of a chatbot using the ChatterBot library in Python for LING 450 at Simon Fraser University. 
+This project will focus on the implementation of a chatbot using the ChatterBot library in Python for LING 450 at Simon Fraser University. 
 The goal is to train a chatbot to hold conversations with a more human-like personality. 
 
 ## Requirements 
