@@ -4,7 +4,7 @@ A Python-based chatbot built with the [ChatterBot](https://chatterbot.readthedoc
 
 ---
 
-## 📌 Overview
+## Overview
 
 With the rise of AI-driven conversational tools like ChatGPT, chatbots have become a common part of everyday life — from banking assistants to voice-activated home devices. This project investigates **corpus-based, retrieval-style chatbots** using ChatterBot, focusing on:
 
@@ -16,7 +16,7 @@ The end goal: create a chatbot capable of engaging in casual, human-like convers
 
 ---
 
-## 🛠 Features
+## Features
 
 - **Corpus-Based Retrieval Architecture** – Uses a dataset of over 184,000 messages to provide relevant responses.
 - **Custom Preprocessing** – Cleans and formats raw CSV data for effective training.
@@ -26,7 +26,7 @@ The end goal: create a chatbot capable of engaging in casual, human-like convers
 
 ---
 
-## 📂 Dataset
+## Dataset
 
 - **Source:** [Kaggle – Chatbot Dataset Topical Chat](https://www.kaggle.com/datasets/arnavsharmaas/chatbot-dataset-topical-chat) by Arnav Sharma  
 - **Size:** ~8,000 conversations, ~184,000 messages.
@@ -39,33 +39,33 @@ The end goal: create a chatbot capable of engaging in casual, human-like convers
 
 ## ⚙️ Installation & Setup
 
-### 1️⃣ Clone the Repository
+### 1. Clone the Repository
 ```bash
 git clone https://github.com/Dtham14/LING450-Chatbot.git
 cd LING450-Chatbot
 ```
 
-### 2️⃣ Create a Virtual Environment
+### 2️. Create a Virtual Environment
 ```bash
 python -m venv venv
 source venv/bin/activate       # Mac/Linux
 venv\Scripts\activate          # Windows
 ```
 
-### 3️⃣ Install Requirements
+### 3️. Install Requirements
 ```bash
 python -m pip install chatterbot==1.0.4 pytz
 ```
 > **Note:** The standard `pip install chatterbot` may not work due to compatibility issues. The above command follows [Real Python’s guide](https://realpython.com/build-a-chatbot-python-chatterbot/).
 
-### 4️⃣ Run the Chatbot
+### 4️. Run the Chatbot
 ```bash
 python chatbot.py
 ```
 
 ---
 
-## 🧠 How It Works
+## How It Works
 
 ### **Architecture**
 - **ChatterBot** uses a **corpus-based, response-by-retrieval** approach.
@@ -84,7 +84,7 @@ python chatbot.py
 
 ---
 
-## 🚧 Challenges
+## Challenges
 
 - **Data Formatting Issues** – Some messages in the dataset contained inconsistent quotation marks requiring multiple preprocessing passes.
 - **Memory Usage** – Training on the full dataset initially caused memory errors when each character was parsed individually instead of whole sentences.
@@ -92,7 +92,7 @@ python chatbot.py
 
 ---
 
-## 📊 Evaluation
+## Evaluation
 
 The chatbot performs well in:
 - Standard greetings.
@@ -109,7 +109,7 @@ Example:
 
 ---
 
-## 🔮 Future Improvements
+## Future Improvements
 
 - **Web Interface** – A ChatGPT-style UI with an input field and scrollable conversation history.
 - **Noun-Based Relevance Filtering** – Use [spaCy](https://spacy.io/) to detect key nouns in input and bias responses containing those nouns.
@@ -118,7 +118,7 @@ Example:
 
 ---
 
-## 📚 References
+## References
 
 - Arnav Sharma. [Chatbot Dataset Topical Chat – Kaggle](https://www.kaggle.com/datasets/arnavsharmaas/chatbot-dataset-topical-chat)  
 - [ChatterBot Documentation](https://chatterbot.readthedocs.io/en/stable/)  
@@ -127,13 +127,10 @@ Example:
 
 ---
 
-## 👤 Author
+## Author
 
 **Daniel Tham**  
-GitHub: [@Dtham14](https://github.com/Dtham14)
+
 
 ---
 ```  
-
-Do you want me to also **add diagrams** to visually explain the architecture and workflow for this README so it looks more professional on GitHub?  
-That could make it stand out more to recruiters and project viewers.
