@@ -37,7 +37,7 @@ The end goal: create a chatbot capable of engaging in casual, human-like convers
 
 ---
 
-## ⚙️ Installation & Setup
+## Installation & Setup
 
 ### 1. Clone the Repository
 ```bash
